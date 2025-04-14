@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fc;
+  color: #333;
+}
+
+header {
+  background-color: #0c2d48;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+/* Specific icons for each card */
+.service-card:nth-child(1)::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1055/1055687.png"); /* IT Consulting */
+}
+
+.service-card:nth-child(2)::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/4370/4370011.png"); /* Server */
+}
+
+.service-card:nth-child(3)::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/4144/4144436.png"); /* Cloud Security */
+}
+
+.service-card h2 {
+  color: #0c2d48;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card p {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  background: #e4e4e4;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
